@@ -2,15 +2,18 @@
 
 require_once("vendor/autoload.php");
 
-$app = new \Slim\Slim();
+use \Slim\Slim;
+use \Glenleao\Page;
+
+$app = new Slim();
 
 $app->config('debug', true);
 
 $app->get('/', function() {
     
-	$sql = new Glenleao\Db\Sql();
-	$results = $sql->select("SELECT * FROM tb_users");
-	echo json_encode($results);
+$page = new Page();
+
+$page->setTpl("index");
 
 });
 
