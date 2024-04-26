@@ -1,0 +1,19 @@
+{
+    "name": "glenleao/comercio",
+    "authors": [
+        {
+            "name": "glenleao comercio",
+            "email": "glen@glenleao.com.br"
+        }
+    ],
+    "require": {
+    	"phpmailer/phpmailer":"5.2.22",
+    	"slim/slim":"2.0",
+    	"rain/raintpl":"3.0.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "": "vendor\\glenleao\\php-classes\\src"
+        }
+    }
+}
